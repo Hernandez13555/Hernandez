@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario</title>
+</head>
+
+<body>
+  <for action="controlador" method="post">
+
+  <div><label for="edad">Ingrse su edad</label></div>
+  <div><input type="number" step="1.5" min="0" max="17" value="16" readonly name="edad" disabled="false"></div>
+
+  <div><label for="nombre">nombre</label></div>
+  <div><input type="text" name="nombre" placeholder="ingrese su nombre" id="nombre" autofocus autocomplete="off"></div>
+
+  <div><label for="">Seleccione un color</label></div>
+  <div><input type="color" id="color"></div>
+
+  
+  <div><label for="text">Ingrese su email</label></div>
+  <div><input type="email" name="email" placeholder="ingrese su email" id="email" autofocus autocomplete="off"></div>
+
+  <div><label for="tel">Ingrese su telefono</label></div>
+  <div><input type="tel" name="telefono" placeholder="Ingrese su telefono" id="telefono" autofocus autocomplete="off"></div>
+
+  <div><label for="text">Seleccione su ciudad</label></div>
+  <div><select name="ciudad" id="ciudad" >
+    <option value="1">Bucaramanga</option>
+    <option value="2">Giron</option>
+    <option value="3">Florida</option>
+  </select></div>
+  
+  <div><label for="">Seleccione su genero</label></div>
+  <div>
+  <label for="">Masculino
+  <input type="radio" name="genero" value="Masculino" checked></label></div>
+  <div><label for="">Femenino
+  <input type="radio" name="genero" value="Femenino"></label></div>
+
+  <div><label for=""><input type="checkbox" name="" checked>Html</label></div>
+  <div><label for=""><input type="checkbox" name="" checked>MySQL</label></div>
+  <div><label for=""><input type="checkbox" name="">Python</label></div>
+  <div><label for=""><input type="checkbox" name="" checked>Git</label></div>
+
+<div><input accept="image/png" multiple type="file"></div>
+
+  <button type="submit">GUARDAR</button>
+
+</body>
+</html>
