@@ -10,14 +10,14 @@
   </style>
 </head>
 
-<br>
-  <br action="controlador" method="post" id="formulario">
+<body>
+  <form action="controlador" method="post" id="formulario" autocomplete="off">
 
     <h1>Formulario</h1>
 
-    <br><div>
+    <div>
       <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autofocus autocomplete="off" required minlength="5" maxlength="30">
+      <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autofocus required pattern="[A-Za-z\s]+" minlength="5" maxlength="30">
     </div>
 
     <div>
@@ -33,9 +33,9 @@
     <div>
       <label for="telefono">Ingrese su teléfono</label>
       <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su teléfono" pattern="[0-9]{10}" required>
-    </div></br>
+    </div>
 
-    <br><div>
+    <div>
       <label for="ciudad">Seleccione su ciudad</label>
       <select name="ciudad" id="ciudad" required>
         <option value="">Seleccione</option>
@@ -43,9 +43,9 @@
         <option value="2">Giron</option>
         <option value="3">Florida</option>
       </select>
-    </div></br>
+    </div>
 
-    <br><div>
+    <div>
       <label>Seleccione su género</label>
       <div>
         <label>
@@ -57,13 +57,13 @@
           <input type="radio" name="genero" value="Femenino"> Femenino
         </label>
       </div>
-    </div></br>
+    </div>
 
-    <br><div>
+    <div>
       <label>Seleccione sus habilidades</label>
       <div>
         <label>
-          <input type="checkbox" name="habilidades" value="HTML"> HTML
+          <input type="checkbox" name="habilidades" value="HTML" checked> HTML
         </label>
       </div>
       <div>
@@ -73,7 +73,7 @@
       </div>
       <div>
         <label>
-          <input type="checkbox" name="habilidades" value="Python" checked> Python
+          <input type="checkbox" name="habilidades" value="Python"> Python
         </label>
       </div>
       <div>
@@ -81,15 +81,17 @@
           <input type="checkbox" name="habilidades" value="Git"> Git
         </label>
       </div>
-    </div></br>
+    </div>
 
     <div>
       <label for="documentos">Adjunte sus documentos</label>
-      <input type="file" name="documentos" id="documentos" accept="image/png" multiple required>
+      <input type="file" name="documentos" id="documentos" accept="image/png, image/jpeg" multiple required>
     </div>
 
-    <br><button type="submit">Guardar</button>
+    <button type="submit">Guardar</button>
     <button type="reset">Restablecer</button>
 
   </form>
-  <script>
+</body>
+
+<script>
