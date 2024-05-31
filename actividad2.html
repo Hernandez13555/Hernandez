@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario 2</title>
+  <style>
+
+  </style>
+</head>
+
+<br>
+  <br action="controlador" method="post" id="formulario">
+
+    <h1>Formulario</h1>
+
+    <br><div>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" autofocus autocomplete="off" required minlength="5" maxlength="30">
+    </div>
+
+    <div>
+      <label for="edad">Ingrese su edad</label>
+      <input type="number" name="edad" id="edad" step="1" min="0" max="25" required>
+    </div>
+
+    <div>
+      <label for="email">Ingrese su email</label>
+      <input type="email" name="email" placeholder="Ingrese su email" id="email" autocomplete="off" required>
+    </div>
+
+    <div>
+      <label for="telefono">Ingrese su teléfono</label>
+      <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su teléfono" pattern="[0-9]{10}" required>
+    </div></br>
+
+    <br><div>
+      <label for="ciudad">Seleccione su ciudad</label>
+      <select name="ciudad" id="ciudad" required>
+        <option value="">Seleccione</option>
+        <option value="1">Bucaramanga</option>
+        <option value="2">Giron</option>
+        <option value="3">Florida</option>
+      </select>
+    </div></br>
+
+    <br><div>
+      <label>Seleccione su género</label>
+      <div>
+        <label>
+          <input type="radio" name="genero" value="Masculino" checked required> Masculino
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="genero" value="Femenino"> Femenino
+        </label>
+      </div>
+    </div></br>
+
+    <br><div>
+      <label>Seleccione sus habilidades</label>
+      <div>
+        <label>
+          <input type="checkbox" name="habilidades" value="HTML"> HTML
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="habilidades" value="MySQL"> MySQL
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="habilidades" value="Python" checked> Python
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="habilidades" value="Git"> Git
+        </label>
+      </div>
+    </div></br>
+
+    <div>
+      <label for="documentos">Adjunte sus documentos</label>
+      <input type="file" name="documentos" id="documentos" accept="image/png" multiple required>
+    </div>
+
+    <br><button type="submit">Guardar</button>
+    <button type="reset">Restablecer</button>
+
+  </form>
+  <script>
